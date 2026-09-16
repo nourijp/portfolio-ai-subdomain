@@ -25,13 +25,13 @@ const LatestWork = () => {
                     key={index}
                     className="group flex flex-col gap-3 xl:gap-6"
                   >
-                    <div className="relative">
+                    <div className={`relative ${value?.imageFit === "contain" ? "bg-black rounded-lg" : ""}`}>
                       <Image
                         src={getImgPath(value?.image)}
                         alt="image"
                         width={570}
                         height={414}
-                        className="rounded-lg w-full h-full object-cover"
+                        className={`rounded-lg w-full h-full ${value?.imageFit === "contain" ? "object-contain" : "object-cover"}`}
                       />
                       <Link
                         href={`/projects/${value.slug}`}

@@ -4,6 +4,7 @@ import workDataRaw from "../../../../public/data/work-data.json";
 
 type Project = {
   image: string;
+  imageFit?: "cover" | "contain";
   secondImage?: string;
   title: string;
   client: string;
@@ -101,12 +102,12 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
       {/* Banner image */}
       <section className="px-6 md:px-12 max-w-5xl mx-auto mb-16">
-        <div className="rounded-2xl overflow-hidden bg-softGray">
+        <div className={`rounded-2xl overflow-hidden ${project.imageFit === "contain" ? "bg-black" : "bg-softGray"}`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-72 md:h-96 object-cover"
+            className={`w-full h-72 md:h-96 ${project.imageFit === "contain" ? "object-contain" : "object-cover"}`}
           />
         </div>
       </section>
