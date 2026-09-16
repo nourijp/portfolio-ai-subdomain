@@ -2,22 +2,32 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import workDataRaw from "../../../../public/data/work-data.json";
 
-const workData = workDataRaw.workData as {
+type Project = {
   image: string;
+  secondImage?: string;
   title: string;
   client: string;
   slug: string;
   description: string;
+  featured?: boolean;
+  draft?: boolean;
+  problem?: string[];
+  solution?: string[];
+  howItWorks?: string[];
+  result?: string[];
   highlights: string[];
-}[];
+};
+
+const workData = workDataRaw.workData as Project[];
+const livePages = workData.filter((p) => !p.draft);
 
 export async function generateStaticParams() {
-  return workData.map((project) => ({ slug: project.slug }));
+  return livePages.map((project) => ({ slug: project.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const project = workData.find((p) => p.slug === slug);
+  const project = livePages.find((p) => p.slug === slug);
   if (!project) return {};
   return {
     title: `${project.title} — Hamed Nouri`,
@@ -25,9 +35,34 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+// Renders **bold** lead-ins (e.g. "**Example:** ...") without pulling in a
+// full markdown parser for what is otherwise plain text.
+function renderInline(text: string) {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) =>
+    part.startsWith("**") && part.endsWith("**") ? (
+      <strong key={i}>{part.slice(2, -2)}</strong>
+    ) : (
+      <span key={i}>{part}</span>
+    )
+  );
+}
+
+function ParagraphBlock({ paragraphs }: { paragraphs: string[] }) {
+  return (
+    <div className="flex flex-col gap-4">
+      {paragraphs.map((p, i) => (
+        <p key={i} className="text-lg text-secondary leading-relaxed">
+          {renderInline(p)}
+        </p>
+      ))}
+    </div>
+  );
+}
+
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const project = workData.find((p) => p.slug === slug);
+  const project = livePages.find((p) => p.slug === slug);
 
   if (!project) {
     notFound();
@@ -76,21 +111,67 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         </div>
       </section>
 
+      {/* Problem / Solution / How it works / Result */}
+      {(project.problem || project.solution || project.howItWorks || project.result) && (
+        <section className="px-6 md:px-12 max-w-5xl mx-auto mb-16 flex flex-col gap-14">
+          {project.problem && (
+            <div>
+              <h2 className="text-2xl font-bold mb-6">The Problem</h2>
+              <ParagraphBlock paragraphs={project.problem} />
+            </div>
+          )}
+          {project.solution && (
+            <div>
+              <h2 className="text-2xl font-bold mb-6">The Solution</h2>
+              <ParagraphBlock paragraphs={project.solution} />
+            </div>
+          )}
+          {project.howItWorks && (
+            <div>
+              <h2 className="text-2xl font-bold mb-6">How It Works</h2>
+              <ParagraphBlock paragraphs={project.howItWorks} />
+            </div>
+          )}
+          {project.result && (
+            <div>
+              <h2 className="text-2xl font-bold mb-6">Result</h2>
+              <ParagraphBlock paragraphs={project.result} />
+            </div>
+          )}
+        </section>
+      )}
+
       {/* Highlights */}
-      <section className="px-6 md:px-12 max-w-5xl mx-auto mb-24">
-        <h2 className="text-2xl font-bold mb-8 pb-4 border-b border-black">Highlights</h2>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {project.highlights.map((item, i) => (
-            <li
-              key={i}
-              className="flex items-start gap-3 bg-softGray rounded-xl px-6 py-5"
-            >
-              <span className="mt-1 w-2 h-2 rounded-full bg-primary flex-shrink-0" />
-              <span className="text-base">{item}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
+      {project.highlights.length > 0 && (
+        <section className="px-6 md:px-12 max-w-5xl mx-auto mb-16">
+          <h2 className="text-2xl font-bold mb-8 pb-4 border-b border-black">Highlights</h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {project.highlights.map((item, i) => (
+              <li
+                key={i}
+                className="flex items-start gap-3 bg-softGray rounded-xl px-6 py-5"
+              >
+                <span className="mt-1 w-2 h-2 rounded-full bg-primary flex-shrink-0" />
+                <span className="text-base">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* Second image */}
+      {project.secondImage && (
+        <section className="px-6 md:px-12 max-w-5xl mx-auto mb-16">
+          <div className="rounded-2xl overflow-hidden bg-softGray">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={project.secondImage}
+              alt={`${project.title} — additional screenshot`}
+              className="w-full h-72 md:h-96 object-cover"
+            />
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="px-6 md:px-12 max-w-5xl mx-auto pb-24 flex flex-col sm:flex-row gap-4 items-start sm:items-center">

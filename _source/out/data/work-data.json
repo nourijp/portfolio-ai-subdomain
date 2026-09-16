@@ -1,12 +1,174 @@
 {
   "workData": [
     {
+      "image": "/images/work/work-img-3.jpg",
+      "title": "Voice Interface for My Second Brain",
+      "client": "Speech-to-Text · Local LLMs · Obsidian · Markdown",
+      "slug": "voice-interface-obsidian",
+      "description": "A voice-driven interface that turns natural speech into structured tasks, projects, events, and notes inside a customized Obsidian knowledge system.",
+      "featured": true,
+      "draft": false,
+      "problem": [
+        "My Obsidian system already organized projects, tasks, events, notes, and daily information—but adding something still required opening the application, navigating to the right place, and entering the correct metadata.",
+        "I wanted the system to understand intent without requiring the interface."
+      ],
+      "solution": [
+        "I built a voice layer that accepts natural speech, transcribes it, identifies the user's intent, and converts it into structured Markdown.",
+        "The system determines whether the input is a task, event, project, note, or other supported object and applies the appropriate metadata, template, folder, and date information.",
+        "The resulting item appears inside the existing Obsidian system without requiring manual organization."
+      ],
+      "howItWorks": [
+        "**Example:** Spoken input — \"Add Toyota interview Tuesday at 9 AM.\" The system identifies the event, extracts the date and time, generates the structured entry, and places it into the appropriate workflow."
+      ],
+      "highlights": [
+        "Speech-to-text input",
+        "Local LLM intent parsing",
+        "Structured Markdown generation",
+        "Automatic metadata",
+        "Template and folder routing",
+        "Tasks, events, projects, and notes",
+        "Integration with existing Obsidian workflows"
+      ]
+    },
+    {
+      "image": "/images/work/work-img-4.jpg",
+      "title": "Multilingual Collaboration System",
+      "client": "LLMs · Translation · Structured Data · Collaboration",
+      "slug": "multilingual-collaboration",
+      "description": "A shared workspace where English and Japanese users can work on the same content in their own languages while changes remain synchronized.",
+      "featured": true,
+      "draft": false,
+      "problem": [
+        "Traditional translation workflows create separate copies of the same information.",
+        "When one side edits the English version, the Japanese version can quickly become outdated—and vice versa. That creates duplicated work and makes multilingual collaboration difficult."
+      ],
+      "solution": [
+        "I built a multilingual collaboration system where English and Japanese users interact with the same underlying content while viewing and editing it in their preferred language.",
+        "Changes are synchronized so the system behaves like one shared workspace rather than two translated documents.",
+        "The goal was not simply translation. It was designing collaboration around the reality that participants may not share the same language."
+      ],
+      "highlights": [
+        "English ↔ Japanese collaboration",
+        "Shared underlying content",
+        "Automatic synchronization",
+        "AI-assisted translation",
+        "Structured content management",
+        "Cross-language editing"
+      ]
+    },
+    {
       "image": "/images/work/work-img-1.jpg",
-      "title": "34-Site Web Deployment System",
-      "client": "Antigravity, GitHub, Cloudflare",
+      "title": "Local-AI Document Pipeline",
+      "client": "Local LLMs · OCR · Markdown · Automation",
+      "slug": "local-ai-document-pipeline",
+      "description": "A document-processing workflow that turns captured paperwork into organized knowledge, extracting tasks, deadlines, metadata, and useful information automatically.",
+      "featured": true,
+      "draft": false,
+      "problem": [
+        "Important information arrives through paperwork, screenshots, PDFs, receipts, forms, and other documents.",
+        "Capturing the document is easy. Turning it into something searchable and actionable is not."
+      ],
+      "solution": [
+        "I built a workflow connecting mobile document capture with a local AI processing system and desktop knowledge base.",
+        "Documents are processed, classified, and converted into structured information.",
+        "The pipeline can identify useful metadata, extract tasks and deadlines, assign tags, and route the resulting Markdown into the appropriate location in the knowledge system."
+      ],
+      "howItWorks": [
+        "**Workflow:** Capture → OCR / extraction → classification → structured data → tasks / deadlines → Markdown → knowledge base"
+      ],
+      "highlights": [
+        "Mobile document capture",
+        "Local AI processing",
+        "OCR",
+        "Automatic classification",
+        "Task extraction",
+        "Deadline extraction",
+        "Metadata and tagging",
+        "Structured Markdown output",
+        "Knowledge-base routing"
+      ]
+    },
+    {
+      "image": "/images/work/work-img-3.jpg",
+      "title": "Your Second Brain, Always Visible",
+      "client": "Obsidian · E-Ink · APIs · Automation",
+      "slug": "trmnl-eink-pipeline",
+      "description": "A calm, always-on interface that turns information from my Obsidian knowledge system into glanceable screens for tasks, projects, events, notes, and daily context.",
+      "featured": true,
+      "draft": false,
+      "problem": [
+        "My tasks, calendar, projects, notes, and other useful information already existed digitally—but seeing them meant opening an application and actively looking for them.",
+        "I wanted important information to remain visible without another screen demanding attention."
+      ],
+      "solution": [
+        "I connected my Obsidian knowledge system to an e-ink display.",
+        "A custom service reads structured Markdown and other data sources, determines what should be displayed, renders display-ready screens, and sends them to the device.",
+        "Different views can surface tasks, calendar information, projects, notes, highlights, meal planning, and other context."
+      ],
+      "howItWorks": [
+        "**Design principle:** Inform, don't interrupt. The display is intentionally quiet. It provides ambient awareness without notifications, app switching, or another bright screen."
+      ],
+      "highlights": [
+        "Obsidian / Markdown source",
+        "E-ink rendering",
+        "Backend APIs",
+        "Scheduled refresh",
+        "Multiple information views",
+        "Caching",
+        "Always-on ambient interface"
+      ]
+    },
+    {
+      "image": "/images/work/work-img-5.jpg",
+      "title": "Comic-to-Video Production Tool",
+      "client": "Creative Technology · Timeline UI · Keyframes · Automation",
+      "slug": "comic-to-video-tool",
+      "description": "A production interface for turning layered comic artwork into motion content using timeline editing, camera keyframes, and repeatable batch workflows.",
+      "featured": true,
+      "draft": false,
+      "problem": [
+        "Turning static comic artwork into video requires repetitive editing: positioning artwork, creating camera movement, timing scenes, and repeating the process across many panels.",
+        "General-purpose video editors can do this, but the workflow is unnecessarily manual for comic-based content."
+      ],
+      "solution": [
+        "I developed a purpose-built production tool for converting layered comic artwork into video.",
+        "The interface provides timeline editing, camera keyframes, layered asset control, and repeatable workflows designed specifically around comic production."
+      ],
+      "highlights": [
+        "Timeline editing",
+        "Camera keyframes",
+        "Layered artwork",
+        "Scene composition",
+        "Repeatable production workflows",
+        "Batch processing"
+      ]
+    },
+    {
+      "image": "/images/work/work-img-1.jpg",
+      "title": "34-Site Deployment System",
+      "client": "Next.js · GitHub · Cloudflare · Automation",
       "slug": "26-site-deployment",
-      "description": "Designed and automated an end-to-end pipeline to build, deploy, and manage 34 portfolio and project websites across GitHub Pages and Cloudflare. Each site is version-controlled, statically exported, and mapped to a custom subdomain—all orchestrated through AI-assisted tooling and shell scripts.",
-      "highlights": ["GitHub Pages automation", "Cloudflare DNS management via API", "Static Next.js export pipeline", "34 subdomains live simultaneously"]
+      "description": "A deployment system that lets me manage dozens of independent project websites without manually configuring hosting, DNS, repositories, and deployments for each one.",
+      "featured": true,
+      "draft": false,
+      "problem": [
+        "Maintaining dozens of small project and portfolio sites creates repetitive infrastructure work.",
+        "Every new site normally requires repository setup, deployment configuration, DNS records, subdomains, and ongoing maintenance."
+      ],
+      "solution": [
+        "I automated the workflow.",
+        "The system builds, exports, deploys, and manages 34 independent websites across GitHub and Cloudflare.",
+        "Each project remains independently version-controlled and mapped to its own subdomain while shared automation handles repetitive deployment work."
+      ],
+      "highlights": [
+        "34 sites",
+        "Automated deployments",
+        "GitHub integration",
+        "Cloudflare API",
+        "DNS automation",
+        "Next.js static exports",
+        "Independent version control"
+      ]
     },
     {
       "image": "/images/work/work-img-2.jpg",
@@ -14,23 +176,9 @@
       "client": "Raycast, Obsidian, Shell",
       "slug": "cross-device-automation",
       "description": "Built a personal automation ecosystem spanning Mac, iOS, and terminal environments. Unified Raycast scripts, Obsidian workflows, and shell aliases into a consistent, context-aware productivity layer that reduces friction across development, writing, and research tasks.",
+      "featured": false,
+      "draft": false,
       "highlights": ["Raycast script commands", "Obsidian templating & automation", "Shell alias library", "Cross-device sync via iCloud & Git"]
-    },
-    {
-      "image": "/images/work/work-img-3.jpg",
-      "title": "TRMNL E-ink Pipeline",
-      "client": "Docker, Backend APIs",
-      "slug": "trmnl-eink-pipeline",
-      "description": "Developed a custom data pipeline to feed real-time and scheduled content to an e-ink display device (TRMNL). The system pulls from multiple backend APIs, processes and formats data, and pushes rendered payloads to the device on a configurable schedule using a Dockerized service.",
-      "highlights": ["Docker containerization", "REST API integration", "Scheduled data pipeline", "E-ink display rendering"]
-    },
-    {
-      "image": "/images/work/work-img-4.jpg",
-      "title": "AI Multilingual Learning System",
-      "client": "LLM Classification, Anki",
-      "slug": "ai-multilingual-learning",
-      "description": "Created an AI-assisted language learning pipeline that classifies vocabulary and grammar items using LLMs, generates context-rich flashcard content, and pipes structured output into Anki decks. The system supports English, Japanese, and Farsi learning tracks.",
-      "highlights": ["LLM-powered content classification", "Automated Anki deck generation", "Multi-language support (EN/JP/FA)", "Spaced repetition optimization"]
     },
     {
       "image": "/images/work/work-img-5.jpg",
@@ -38,7 +186,53 @@
       "client": "Asset Extraction Pipeline",
       "slug": "messaging-sticker-conversion",
       "description": "Engineered a batch processing pipeline to extract, convert, and package messaging sticker assets across multiple formats and platforms. The tool automates frame extraction, transparency normalization, and export to APNG/WebP formats compatible with LINE, WhatsApp, and Telegram.",
+      "featured": false,
+      "draft": false,
       "highlights": ["Batch asset extraction", "Multi-format export (APNG, WebP)", "Transparency normalization", "LINE / WhatsApp / Telegram compatible"]
+    },
+    {
+      "image": "/images/work/work-img-4.jpg",
+      "title": "AI Multilingual Learning System",
+      "client": "LLM Classification, Anki",
+      "slug": "ai-multilingual-learning",
+      "description": "Created an AI-assisted language learning pipeline that classifies vocabulary and grammar items using LLMs, generates context-rich flashcard content, and pipes structured output into Anki decks. The system supports English, Japanese, and Farsi learning tracks.",
+      "featured": false,
+      "draft": false,
+      "highlights": ["LLM-powered content classification", "Automated Anki deck generation", "Multi-language support (EN/JP/FA)", "Spaced repetition optimization"]
+    },
+    {
+      "image": "/images/work/work-img-2.jpg",
+      "title": "Deterministic Comic Coloring Engine",
+      "client": "Visual Processing · Style Consistency",
+      "slug": "deterministic-comic-coloring",
+      "description": "A visual-processing system for producing repeatable, style-consistent comic coloring without relying entirely on generative AI.",
+      "featured": false,
+      "draft": true,
+      "problem": [
+        "Generative image workflows can produce inconsistent colors, character details, and visual styles across sequential artwork."
+      ],
+      "solution": [
+        "A deterministic processing system designed around repeatability and style consistency, supplemented by AI where useful."
+      ],
+      "highlights": []
+    },
+    {
+      "image": "/images/work/work-img-3.jpg",
+      "title": "Extending Obsidian Into a Personal Operating System",
+      "client": "Obsidian · Calendar · Bases",
+      "slug": "obsidian-calendar-bases",
+      "description": "Custom extensions that turn Obsidian's structured data into calendars, project views, habit tracking, meal planning, and faster content creation.",
+      "featured": false,
+      "draft": true,
+      "highlights": [
+        "Calendar interface",
+        "Add items directly from dates",
+        "Color-coded content types",
+        "Tasks vs events vs projects",
+        "Habit tracking",
+        "Meal planning",
+        "Filtered database views"
+      ]
     }
   ]
 }

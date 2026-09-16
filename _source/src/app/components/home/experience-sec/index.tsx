@@ -7,28 +7,28 @@ const ExperienceSec = () => {
             title: "Communications Manager",
             company: "CiraConnect",
             type: "Fulltime",
-            description: "Led SaaS communications, documentation, training, and adoption support across teams. Coordinated cross-functional teams to clarify changes and improve rollout readiness, driving an increase in adoption and 22% reduction in support requests."
+            description: "Led communications, training, product adoption, and workflow improvement around enterprise SaaS systems. Built multi-format training and communications programs, collaborated across product, support, and leadership teams, and used analytics and user feedback to improve adoption and reduce friction."
         },
         {
             year: "2021-Present",
-            title: "Content & Product Manager",
+            title: "Product & Educational Content Lead",
             company: "Aya & Sura, LLC",
             type: "Remote",
-            description: "Led product communication, content development, and digital learning support. Leading development of an iOS learning app focused on shared progress and habit-building."
+            description: "Designed educational products and digital learning experiences spanning mobile applications, flashcards, structured learning systems, and children's content. Worked across content, UX, illustration, and development."
         },
         {
             year: "2009-Present",
-            title: "Founder & Community Growth",
+            title: "Founder / Product & Content Lead",
             company: "MManga",
             type: "Remote",
-            description: "Built and scaled a digital content platform. Led content and communications strategy, growing audiences to 44K+ across platforms."
+            description: "Built and operated a digital content platform reaching 44K+ followers and 3.2M+ views. Developed web experiences, publishing workflows, creative production systems, community programs, and multilingual content."
         },
         {
             year: "2017-2020",
-            title: "Instructor & Communications Coach",
+            title: "Instructor, JET Programme",
             company: "JET Programme",
             type: "Fulltime",
-            description: "Delivered communication-focused instruction and coordinated programs requiring clear communication, planning, and stakeholder alignment in Tokyo, Japan."
+            description: "Instruction and program coordination in Tokyo, Japan—early evidence of the cross-cultural and communication foundation this work still draws on."
         }
     ];
 

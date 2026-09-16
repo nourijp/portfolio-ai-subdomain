@@ -24,9 +24,10 @@ const index = () => {
                   />
                 </div>
               </div>
-              <h1>AI Automation {"&"} Communications<br />Specialist</h1>
+              <h1>AI Product {"&"} Design<br />Technologist</h1>
             </div>
-            <p className="text-secondary font-normal max-w-md xl:max-w-xl">I build AI-assisted tools and automated systems that streamline development, content, and learning processes. By translating complex technical systems into clear, user-facing communication, I help teams optimize their product workflows, reduce adoption friction, and scale their impact.</p>
+            <p className="text-secondary font-normal max-w-md xl:max-w-xl">I build products, prototypes, and workflow systems that make complex work easier to understand and use. My work spans AI, automation, UX, local-first tools, multilingual systems, and creative technology&mdash;turning real workflow problems into practical, working solutions.</p>
+            <p className="text-sm font-medium text-primary uppercase tracking-widest">50+ apps, plugins, tools {"&"} pipelines built</p>
           </div>
           {/* Mobile Video/Image */}
           <div className="block lg:hidden relative w-full max-w-[685px] mx-auto aspect-[685/650]">

@@ -10,15 +10,15 @@ const bricolageGrotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "Hamed Nouri — AI Automation & Communications Specialist",
-  description: "Portfolio for Hamed Nouri covering AI automation, technical workflows, and product communications. Based in Denton, TX.",
+  title: "Hamed Nouri — AI Product & Design Technologist",
+  description: "Portfolio for Hamed Nouri: products, prototypes, and workflow systems across AI, automation, UX, local-first tools, multilingual systems, and creative technology. Based in Denton, TX.",
   openGraph: {
     images: [
       {
         url: "https://ai.hamednouri.com/images/home/banner/banner-img.png",
         width: 1200,
         height: 630,
-        alt: "Hamed Nouri - AI Automation & Communications",
+        alt: "Hamed Nouri — AI Product & Design Technologist",
       },
     ],
   },

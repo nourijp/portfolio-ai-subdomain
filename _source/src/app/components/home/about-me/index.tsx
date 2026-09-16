@@ -34,15 +34,27 @@ const AboutMe = () => {
               </div>
 
               <div className="w-full lg:max-w-2xl flex-1">
-                <p>
-                  I am an AI automation and communications specialist with over 15 years of experience spanning SaaS messaging, product launches, and digital community growth. My work sits at the intersection of technical systems and human communication—whether I'm building a cross-device automation system to launch development environments, or crafting rollout messaging to guide users through an enterprise software transition. I focus on creating workflow automation systems that eliminate friction and clear documentation that drives adoption.
-                </p>
+                <div className="flex flex-col gap-4">
+                  <p>
+                    I&rsquo;m an AI Product {"&"} Design Technologist with 14+ years of experience across technology, communications, digital products, education, and user-centered content.
+                  </p>
+                  <p>
+                    A lot of my work starts the same way: I notice friction in a workflow, figure out what people actually need, prototype a solution, test it, and keep improving it until it becomes genuinely useful.
+                  </p>
+                  <p>
+                    Recently, I&rsquo;ve built 50+ web, mobile, automation, educational, and internal tools&mdash;including multilingual collaboration systems, voice interfaces, local-AI document pipelines, creative production tools, knowledge-management systems, and hardware/software integrations.
+                  </p>
+                  <p>
+                    I&rsquo;m especially interested in the space between product thinking and implementation: taking an idea from &ldquo;this should work better&rdquo; to something people can actually use.
+                  </p>
+                </div>
 
-                <div className="grid grid-cols-3 py-10 xl:py-16 gap-5 border-b border-mistGray">
+                <div className="grid grid-cols-2 md:grid-cols-4 py-10 xl:py-16 gap-5 border-b border-mistGray">
                   {[
-                    { count: "15", label: "Years of Experience" },
+                    { count: "14+", label: "Years Experience" },
                     { count: "3.2M+", label: "Content Views" },
                     { count: "44K+", label: "Audience & Followers" },
+                    { count: "50+", label: "Recent Builds" },
                   ].map((item, i) => (
                     <div key={i}>
                       <h3>{item.count}</h3>

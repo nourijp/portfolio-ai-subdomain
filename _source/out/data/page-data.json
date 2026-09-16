@@ -34,50 +34,22 @@
     ]
   },
   "educationData": {
-    "education": [
+    "categories": [
       {
-        "title": "Delivery & Implementation",
-        "description": "Software rollouts, user onboarding, project coordination, and adoption planning."
+        "title": "Product & Prototyping",
+        "skills": ["Product thinking", "Rapid prototyping", "Human-centered design", "UX", "Workflow design", "Iterative development"]
       },
       {
-        "title": "Stakeholder Management",
-        "description": "Cross-functional alignment, SME collaboration, and client/user communication."
+        "title": "AI & Automation",
+        "skills": ["LLM integration", "Local AI", "Workflow automation", "Voice interfaces", "Document processing", "AI-assisted development"]
       },
       {
-        "title": "Enablement & Training",
-        "description": "Training materials, how-to guides, self-service resources, and knowledge base content."
-      }
-    ],
-    "skills": [
-      {
-        "name": "Electron",
-        "icon": "/images/home/education-skill/electron-icon.png",
-        "rating": 5
+        "title": "Engineering & Systems",
+        "skills": ["JavaScript / TypeScript", "React / Next.js", "Swift / SwiftUI", "Python", "Supabase", "APIs", "Docker", "Git"]
       },
       {
-        "name": "Antigravity",
-        "icon": "/images/home/education-skill/antigravity-icon.png",
-        "rating": 5
-      },
-      {
-        "name": "Codex",
-        "icon": "/images/home/education-skill/codex-icon.png",
-        "rating": 5
-      },
-      {
-        "name": "Obsidian",
-        "icon": "/images/home/education-skill/obsidian-icon.png",
-        "rating": 5
-      },
-      {
-        "name": "Notion",
-        "icon": "/images/home/education-skill/notion-icon.png",
-        "rating": 4
-      },
-      {
-        "name": "Xcode",
-        "icon": "/images/home/education-skill/xcode-icon.png",
-        "rating": 4
+        "title": "Communication & Design",
+        "skills": ["Technical communication", "Content design", "Multilingual systems", "Visual storytelling", "Training", "Cross-functional collaboration"]
       }
     ]
   },
