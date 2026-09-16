@@ -1,7 +1,7 @@
 {
   "workData": [
     {
-      "image": "/images/work/work-img-3.jpg",
+      "image": "/images/work/work-img-voice-interface.jpg",
       "title": "Voice Interface for My Second Brain",
       "client": "Speech-to-Text · Local LLMs · Obsidian · Markdown",
       "slug": "voice-interface-obsidian",
