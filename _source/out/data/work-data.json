@@ -90,7 +90,8 @@
       ]
     },
     {
-      "image": "/images/work/work-img-3.jpg",
+      "image": "/images/work/work-img-trmnl.jpg",
+      "imageFit": "contain",
       "title": "Your Second Brain, Always Visible",
       "client": "Obsidian · E-Ink · APIs · Automation",
       "slug": "trmnl-eink-pipeline",
