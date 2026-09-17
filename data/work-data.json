@@ -1,8 +1,8 @@
 {
   "workData": [
     {
-      "image": "/images/work/voice-interface-obsidian-ai-assistant.jpg",
-      "imageFit": "contain",
+      "image": "/images/work/voice-interface-omni-obsidian-flow.jpg",
+      "imageFit": "cover",
       "title": "Voice Interface for My Second Brain",
       "client": "Speech-to-Text · Local LLMs · Obsidian · Markdown",
       "slug": "voice-interface-obsidian",
