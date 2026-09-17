@@ -58,7 +58,8 @@
       ]
     },
     {
-      "image": "/images/work/work-img-1.jpg",
+      "image": "/images/work/local-ai-document-pipeline-thumbnail.jpg",
+      "imageFit": "cover",
       "title": "Local-AI Document Pipeline",
       "client": "Local LLMs · OCR · Markdown · Automation",
       "slug": "local-ai-document-pipeline",
@@ -121,7 +122,8 @@
       ]
     },
     {
-      "image": "/images/work/work-img-5.jpg",
+      "image": "/images/work/comic-to-video-production-tool-thumbnail.jpg",
+      "imageFit": "cover",
       "title": "Comic-to-Video Production Tool",
       "client": "Creative Technology · Timeline UI · Keyframes · Automation",
       "slug": "comic-to-video-tool",
