@@ -199,14 +199,24 @@
       "highlights": ["Batch asset extraction", "Multi-format export (APNG, WebP)", "Transparency normalization", "LINE / WhatsApp / Telegram compatible"]
     },
     {
-      "image": "/images/work/work-img-4.jpg",
-      "title": "AI Multilingual Learning System",
-      "client": "LLM Classification, Anki",
-      "slug": "ai-multilingual-learning",
-      "description": "Created an AI-assisted language learning pipeline that classifies vocabulary and grammar items using LLMs, generates context-rich flashcard content, and pipes structured output into Anki decks. The system supports English, Japanese, and Farsi learning tracks.",
-      "featured": false,
+      "image": "/images/work/para-net-thumbnail.jpg",
+      "imageFit": "cover",
+      "title": "PARA+NET Knowledge System",
+      "client": "Knowledge Management, Obsidian, Automation",
+      "slug": "para-net-knowledge-system",
+      "description": "Expanded the PARA method into PARA+NET, adding Notes, Events, and Tasks as first-class parts of a connected Obsidian knowledge system.",
+      "featured": true,
       "draft": false,
-      "highlights": ["LLM-powered content classification", "Automated Anki deck generation", "Multi-language support (EN/JP/FA)", "Spaced repetition optimization"]
+      "problem": [
+        "PARA provides a useful structure for Projects, Areas, Resources, and Archives, but much of my daily information doesn't fit neatly into those categories.",
+        "Notes, events, and tasks are not secondary information. They are fundamental objects that connect everything else."
+      ],
+      "solution": [
+        "I expanded the model into PARA+NET, adding Notes, Events, and Tasks as first-class parts of the system.",
+        "I then customized Obsidian and supporting workflows so these different objects could connect rather than live in isolated folders or applications.",
+        "The project combines information architecture, workflow design, metadata, interface customization, and automation."
+      ],
+      "highlights": ["Custom information architecture", "Projects, Areas, Resources and Archives", "Notes, Events, and Tasks", "Connected metadata", "Obsidian customization", "Workflow automation"]
     },
     {
       "image": "/images/work/work-img-2.jpg",
