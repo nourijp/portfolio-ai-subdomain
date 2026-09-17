@@ -32,7 +32,8 @@
       ]
     },
     {
-      "image": "/images/work/work-img-4.jpg",
+      "image": "/images/work/multilingual-collaboration-thumbnail.jpg",
+      "imageFit": "cover",
       "title": "Multilingual Collaboration System",
       "client": "LLMs · Translation · Structured Data · Collaboration",
       "slug": "multilingual-collaboration",
