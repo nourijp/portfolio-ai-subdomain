@@ -1,11 +1,8 @@
 "use client";
-import { useState } from "react";
 import { getImgPath } from "@/utils/image";
 import Image from "next/image";
 
 const index = () => {
-  const [isVideoEnded, setIsVideoEnded] = useState(false);
-
   return (
     <section className="relative hero-section overflow-hidden pt-35 md:pt-40 pb-12 lg:pb-30 xl:pt-52">
       <div className="container">
@@ -29,44 +26,28 @@ const index = () => {
             <p className="text-secondary font-normal max-w-md xl:max-w-xl">I build products, prototypes, and workflow systems that make complex work easier to understand and use. My work spans AI, automation, UX, local-first tools, multilingual systems, and creative technology&mdash;turning real workflow problems into practical, working solutions.</p>
             <p className="text-sm font-medium text-primary uppercase tracking-widest">50+ apps, plugins, tools {"&"} pipelines built</p>
           </div>
-          {/* Mobile Video/Image */}
+          {/* Mobile Image */}
           <div className="block lg:hidden relative w-full max-w-[685px] mx-auto aspect-[685/650]">
             <Image
               src={getImgPath("/images/home/banner/banner-img.png")}
               alt="banner-img"
               width={685}
               height={650}
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${isVideoEnded ? "opacity-100" : "opacity-0"}`}
+              className="absolute inset-0 w-full h-full object-cover"
               priority
-            />
-            <video
-              src={getImgPath("/images/home/banner/video-banner.mp4")}
-              autoPlay
-              muted
-              playsInline
-              onEnded={() => setIsVideoEnded(true)}
-              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${isVideoEnded ? "opacity-0 pointer-events-none" : "opacity-100"}`}
             />
           </div>
         </div>
       </div>
       <div className="absolute right-0 top-0 hidden h-auto w-1/2 lg:block 2xl:h-171.5 2xl:w-187.5">
-        {/* Desktop Video/Image */}
+        {/* Desktop Image */}
         <Image
           src={getImgPath("/images/home/banner/banner-img.png")}
           alt="banner-img"
           width={685}
           height={650}
-          className={`absolute right-0 top-0 z-1 w-[685px] h-[650px] object-cover transition-opacity duration-500 ${isVideoEnded ? "opacity-100" : "opacity-0"}`}
+          className="absolute right-0 top-0 z-1 w-[685px] h-[650px] object-cover"
           priority
-        />
-        <video
-          src={getImgPath("/images/home/banner/video-banner.mp4")}
-          autoPlay
-          muted
-          playsInline
-          onEnded={() => setIsVideoEnded(true)}
-          className={`absolute right-0 top-0 z-1 w-[685px] h-[650px] object-cover transition-opacity duration-500 ${isVideoEnded ? "opacity-0 pointer-events-none" : "opacity-100"}`}
         />
       </div>
     </section>

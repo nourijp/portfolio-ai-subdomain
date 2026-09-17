@@ -93,6 +93,8 @@
     {
       "image": "/images/work/trmnl-eink-dashboard-obsidian-second-brain.jpg",
       "imageFit": "contain",
+      "thumbnailImage": "/images/work/trmnl-eink-dashboard-thumbnail.jpg",
+      "thumbnailImageFit": "cover",
       "title": "Your Second Brain, Always Visible",
       "client": "Obsidian · E-Ink · APIs · Automation",
       "slug": "trmnl-eink-pipeline",
