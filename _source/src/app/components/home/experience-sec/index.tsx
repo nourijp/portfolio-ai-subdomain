@@ -3,6 +3,20 @@ import React from 'react';
 const ExperienceSec = () => {
     const experiences = [
         {
+            year: "Nov 2025-Present",
+            title: "Founder / Independent Consultant",
+            company: "Mindful Computing",
+            type: "Freelance",
+            description: "Independent consulting and custom software development for clients -- automation tooling, AI-assisted workflows, and purpose-built applications."
+        },
+        {
+            year: "Jun 2025-Present",
+            title: "AI & LLM Consultant",
+            company: "Digitive",
+            type: "Contract",
+            description: "Contract engagement supporting a Japanese SME, building and advising on LLM-based systems and workflows."
+        },
+        {
             year: "2021-2025",
             title: "Communications Manager",
             company: "CiraConnect",
