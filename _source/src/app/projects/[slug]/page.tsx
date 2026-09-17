@@ -71,8 +71,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
   return (
     <main className="min-h-screen bg-white">
-      {/* Nav */}
-      <nav className="py-6 px-6 md:px-12 border-b border-gray-100 flex items-center justify-between">
+      {/* Nav -- pt-28/md:pt-36 clears the absolutely-positioned global Header
+          (Download PDF Resume), which otherwise overlaps this bar and
+          intercepts clicks meant for "Back to portfolio". */}
+      <nav className="pt-28 md:pt-36 pb-6 px-6 md:px-12 border-b border-gray-100 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold tracking-tight">H</Link>
         <Link
           href="/"
