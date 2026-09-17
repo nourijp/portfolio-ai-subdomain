@@ -1,7 +1,7 @@
 {
   "workData": [
     {
-      "image": "/images/work/work-img-voice-interface.jpg",
+      "image": "/images/work/voice-interface-obsidian-ai-assistant.jpg",
       "imageFit": "contain",
       "title": "Voice Interface for My Second Brain",
       "client": "Speech-to-Text · Local LLMs · Obsidian · Markdown",
@@ -90,7 +90,7 @@
       ]
     },
     {
-      "image": "/images/work/work-img-trmnl.jpg",
+      "image": "/images/work/trmnl-eink-dashboard-obsidian-second-brain.jpg",
       "imageFit": "contain",
       "title": "Your Second Brain, Always Visible",
       "client": "Obsidian · E-Ink · APIs · Automation",
@@ -219,7 +219,7 @@
       "highlights": []
     },
     {
-      "image": "/images/work/work-img-3.jpg",
+      "image": "/images/work/obsidian-calendar-bases-extension.jpg",
       "title": "Extending Obsidian Into a Personal Operating System",
       "client": "Obsidian · Calendar · Bases",
       "slug": "obsidian-calendar-bases",
