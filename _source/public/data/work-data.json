@@ -148,7 +148,8 @@
       ]
     },
     {
-      "image": "/images/work/work-img-1.jpg",
+      "image": "/images/work/34-site-deployment-thumbnail.jpg",
+      "imageFit": "cover",
       "title": "34-Site Deployment System",
       "client": "Next.js · GitHub · Cloudflare · Automation",
       "slug": "26-site-deployment",
