@@ -24,7 +24,7 @@ const index = () => {
               <h1>AI Product {"&"} Design<br />Technologist</h1>
             </div>
             <p className="text-secondary font-normal max-w-md xl:max-w-xl">I build products, prototypes, and workflow systems that make complex work easier to understand and use. My work spans AI, automation, UX, local-first tools, multilingual systems, and creative technology&mdash;turning real workflow problems into practical, working solutions.</p>
-            <p className="text-sm font-medium text-primary uppercase tracking-widest">50+ apps, plugins, tools {"&"} pipelines built</p>
+            <p className="text-sm font-medium text-primary uppercase tracking-widest">50+ apps, plugins, tools {"&"} pipelines built in 2 months</p>
           </div>
           {/* Mobile Image */}
           <div className="block lg:hidden relative w-full max-w-[685px] mx-auto aspect-[685/650]">
