@@ -81,6 +81,14 @@ const LatestWork = () => {
                 );
               })}
             </div>
+            <div className="flex justify-center mt-10 xl:mt-16">
+              <Link
+                href="https://projects.hamednouri.com/"
+                className="py-4 px-8 border border-primary rounded-full text-base font-medium hover:bg-primary hover:text-white transition-colors"
+              >
+                See All 50+ Projects
+              </Link>
+            </div>
           </div>
         </div>
       </div>
